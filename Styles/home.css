@@ -1,10 +1,9 @@
+/* Roboto Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 body {
     margin: 0;
     padding: 0;  
-}
-
-main {
-    height: 200vh;
 }
 
 aside {
@@ -16,13 +15,85 @@ aside {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    transition: 2s;
+    transition: 2s ease-in-out;
 }
 
 
-.curriculoOffViewer{
+/*  Estilo card curriculo */
+@keyframes loading {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100%{opacity: 100%;}
+}
+@keyframes btn-Animation {
+    0%{opacity: 0; width: 0;}
+    50%{opacity: 0; width: 0;}
+    100%{opacity: 100%;}
+}
+
+.container {
+    display: flex;
+    flex-flow: row-reverse;
+    margin-left: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.estiloCurriculo{
+
+    display: grid;
+    grid-template-areas: "myNameIs myNameIs"
+                "articleLeft articleRight";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+
+    background: rgba(255, 255, 255, 0.16);
+    color: white;
+    border-radius: 20px;
+    animation: loading 3s normal;
+
+    padding-left: 80px;
+
+    height: 750px;
+    width: 900px;
+}
+.estiloCurriculo h1 {
+    grid-area: myNameIs;
+    font-size: 24pt;
+    text-align: center;
+    font-weight: 700;
+}
+.estiloCurriculo{
+    font-family: 'Roboto', sans-serif;
+}
+.estiloCurriculo h2 {
+    font-size: 20pt;
+    font-weight: 400;
+}
+.estiloCurriculo h3{
+    font-size: 12pt;
+    font-weight: lighter;
+    line-height: 10px;
+}
+#articleLeft {
+    grid-area: articleLeft;
+}
+#articleRight{
+    grid-area: articleRight;
+}
+
+.container img {
+    z-index: 2;
+    margin-left: -100px;
+    height: 600px;
+    filter: grayscale(0.8);
+    animation: loading 4s normal;
+}
+.curriculoOffViewer{ 
     display: none;
 }
+
+/* ------------------- */
 
 
 .btn-curriculo {
@@ -33,13 +104,17 @@ aside {
     height: 170px;
     border-radius: 100%;
     border: solid 10px white; 
+    cursor: pointer;
     
-    box-shadow: #139BF2 -15px 0px 0px 75px;
+    box-shadow: #139BF2 -15px 0px 0px 50px;
 
     justify-content: center;
     align-items: center;
     color: transparent;
-    transition: 1s;
+    transition: 1s ease;
+}
+.btn-curriculo h2{
+    display: none;
 }
 
 .btn-curriculo:hover{
@@ -59,38 +134,34 @@ aside {
 }
 .section-top {
     background: rgb(255, 255, 255);
-    height: 39.3vh;
+    height: 42.9vh;
     width: 100px;
     border-bottom-left-radius: 100px;
-    transition: 4s;
+    transition: 2s;
 }
 .section-mid{
     background: rgb(255, 255, 255);
-    height: 39.2vh;
+    height: 42.9vh;
     width: 100px;
     border-top-left-radius: 100px;
-    transform: 4s;
+    transform: 2s;
 }
 
 
 
 
-/*  Aside Curriculo */
+/* --------------- Aside Curriculo -----------------------------*/
+/*---------------- Trasição para tela curriculo ----------------*/
  .asideCurriculo {
     background: #139BF2;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 
 
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
-  .curriculo {
-    width: 90vw;
- }
-
-
 
 
 
@@ -101,34 +172,35 @@ aside {
     width: 170px;
     height: 170px;
     border: solid 10px white; 
-    border-top-left-radius: 100%;
-    border-bottom-left-radius: 100%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
-    border-right-color:transparent ;
+    border-right-color:transparent ; 
+
     position: relative;
+    float: right;
 
     box-shadow: none;
     justify-content: center;
     align-items: center;
     color: transparent;
     transition: 1s;
+    animation: btn-Animation 3.5s normal;
 }
 .btn-curriculo-active:hover{
-    color: #ffffff;
+    color: #139BF2;
+    background: white;
+}
+.btn-curriculo-active h1{
+    display: none;
+}
+.btn-curriculo-active h2 {
+    display: block;
 }
 
 .sectionsRight {
-    display: hidden;
-    flex-direction: column;
-    justify-content: space-between;
-    background: transparent;
-    height: 100vh;
-    width: 0;
-}
-.sectionRight {
-    width: 0;
+    display: none;
 }
 
-
-
+/*  ----------end asideCur---------- */
