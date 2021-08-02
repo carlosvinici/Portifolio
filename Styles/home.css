@@ -1,6 +1,7 @@
 /* Roboto Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
+
 body {
     margin: 0;
     padding: 0;  
@@ -204,3 +205,130 @@ aside {
 }
 
 /*  ----------end asideCur---------- */
+
+
+/* ----------------My Skills Styles ------------------
+ */
+main{
+    display: flex;
+    flex-direction: column;
+    float: right;
+    height: 200vh;
+    width: 70vw;
+
+    margin: 0;
+    padding: 0;
+}
+.sectionAboutMe{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttonDown{
+    float: flex-end;
+    width: 100px;
+    height: 100px;
+    background-color: #139BF2;
+    border-radius: 40px;
+    color: white;
+}
+
+.menuAccessibility {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+}
+.menuAccessibility a {
+    color: #139BF2;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.aboutMe{
+    display: flex;
+    width: 60vw;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("../assets/imgs/background-about-me.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 800px;
+
+
+}
+.aboutMe img{
+    margin-bottom: 90px;
+    margin-left: 70px;
+}
+.textAboutMe{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.textAboutMe h1 {
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: 24pt;
+}
+.textAboutMe p{
+    font-size: 14pt;
+
+    line-height: 28px;
+    padding: 80px 60px;
+}
+
+
+/* ------------------------------------------------ */
+
+.sectionMySkills {
+    display: flex;
+    height: 100vh;
+    background-image: url("../assets/imgs/background-skills.svg");
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: center;
+}
+
+.cardSkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25vw;
+    height: 65vh;
+    background-color: white;
+    border: 2px solid #139BF2;
+}
+.textCardSkills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #32b0ff;
+    width: 25vw;
+    height: 20vh;
+    text-align: center;
+    color: white;
+}
+.textCardSkills p {
+    width: 15vw;
+    font-size: 14pt;
+    font-family: 'Roboto' sans-serif;
+}
+.cardSkills div{
+    background: white;
+    margin: 60px;
+
+}
+.cardSkills span{
+    width: 60px;
+    height: 60px;
+}
