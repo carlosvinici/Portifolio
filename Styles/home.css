@@ -137,6 +137,7 @@ aside {
     background: rgb(255, 255, 255);
     height: 42.9vh;
     width: 100px;
+    margin-right: 5px;
     border-bottom-left-radius: 100px;
     transition: 2s;
 }
@@ -144,6 +145,7 @@ aside {
     background: rgb(255, 255, 255);
     height: 42.9vh;
     width: 100px;
+    margin-right: 5px;
     border-top-left-radius: 100px;
     transform: 2s;
 }
@@ -213,7 +215,7 @@ main{
     display: flex;
     flex-direction: column;
     float: right;
-    height: 200vh;
+    height: 400vh;
     width: 70vw;
 
     margin: 0;
@@ -290,45 +292,95 @@ main{
 
 /* ------------------------------------------------ */
 
-.sectionMySkills {
-    display: flex;
-    height: 100vh;
-    background-image: url("../assets/imgs/background-skills.svg");
-    background-repeat: no-repeat;
-    background-size: 800px;
-    background-position: center;
-}
-
-.cardSkills {
+.sectionMySkills{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 25vw;
-    height: 65vh;
-    background-color: white;
-    border: 2px solid #139BF2;
-}
-.textCardSkills{
-    display: flex;
-    justify-content: center;
     align-items: center;
-    background: #32b0ff;
-    width: 25vw;
-    height: 20vh;
+    justify-content: center;
     text-align: center;
+
+    height: 100vh;
+}
+
+.tituloseIcones{
+    display: flex;
+    background: #139BF2;
+    border-radius: 20px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     color: white;
-}
-.textCardSkills p {
-    width: 15vw;
-    font-size: 14pt;
-    font-family: 'Roboto' sans-serif;
-}
-.cardSkills div{
-    background: white;
-    margin: 60px;
 
 }
-.cardSkills span{
-    width: 60px;
-    height: 60px;
+.tituloseIcones img {
+    filter: invert();
+    width: 30px;
+    padding-right: 10px;
+}
+h2 img{
+    filter: invert();
+    padding: 0px;
+}
+
+.imgSkills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    width: 45vw;
+    height: 45vh;
+    background-color: white;
+}
+
+/* ------------------------------------------- */
+
+.sectionMyProjects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'titulo titulo titulo';
+    gap: 30px;
+    align-items: center;
+    height: 110vh;
+}
+.tituloseIcones:nth-child(1){
+    grid-area: titulo;
+    margin: 0 auto;
+    
+}
+
+.cardProject {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 390px;
+    border: 1px solid #139BF2;
+    border-radius: 10px;
+}
+.cardProject #previewProject {
+    padding: 10px;
+}
+.cardProject article{
+    height: 170px;
+    padding: 0px 30px;
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(45deg,#139BF2, #07C2DB);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.cardProject h2{
+    font-size: 16pt;
+    font-weight: bold;
+    color: white;
+}
+.cardProject a{
+    text-decoration: none;
+}
+.cardProject p{
+    font-size: 10pt;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.753);
+    
 }
