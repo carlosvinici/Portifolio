@@ -21,3 +21,5 @@ function toggleMenu(event){
 
 buttonCurriculo.addEventListener('click', toggleMenu);
 buttonCurriculo.addEventListener('touchstart', toggleMenu);
+
+

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/home.css">
+    
+    <title>Meu Portifólio</title>
+</head>
+<body>
+    <aside id="asideLeft" >
+        <section id="sectCurriculo" class="curriculoOffViewer">
+            
+            <div class="container">
+
+                <img src="./assets/imgs/imagem-curriculo-com-dog.svg" alt="" srcset="">
+
+                <div class="estiloCurriculo">
+                    <h1>Carlos Vinicius Soares Da Silva</h1>
+                    <article id="articleLeft">
+                        <h2>Formação Academica</h2>
+                        <h3>Ensino Superior - Engenharia de software</h3>
+                        <h3>Situação - Cursando 4º Período.</h3>
+                        <h3>Estácio de Goias - 01/2020 // 12/2024</h3>
+
+                        <h2>Habilidades</h2>
+                        <ul>
+                            <li><h3>Aprendizado contínuo.</h3></li>
+                            <li><h3>Brilho nos olhos.</h3></li>
+                            <li><h3>Equilíbrio emocional.</h3> </li>
+                            <li><h3>Criatividade.</h3></li>
+                        </ul>
+        
+                        <h2>Cursos</h2>
+                        
+                        <h3>programação</h3>
+                        <h3>programacao</h3>
+                        <h3>HTML CSS JS</h3>
+
+                        <h2>Idiomas</h2>
+                        <h3>Inglês - Intermediário</h3>
+                        <h3>Português - Nativo</h3>
+                    </article>
+
+                    <article id="articleRight">
+                        <h2>Objetivo Profissional</h2>
+                        <h3>Cargo - Front End Jr.</h3> 
+                        <h3>Pretenção Salarial - Compatível com o Mercado.</h3>
+                        <h3>Tipo de contrato - Efetivo CLT</h3>
+
+                        <h2>Conhecimentos</h2>
+
+                        <h3>JavaScript - React.js - Node.js</h3>
+                        <h3>C++ - Python - Java</h3>
+                        <h3>Npm - Firebase - Git HTML5 CSS3 - Sass</h3>
+                        <h3>Figma - UI/UX</h3>
+                        <h3>Windows - Linux</h3>
+
+                        <h2>Complementos</h2>
+                        <h3>Carteira de Habilitação A e B</h3>
+                        <h3>Veículo Próprio - Moto</h3>  
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div id="buttonCurriculo" class="btn-curriculo "> <!--Se a class estiver adicionada os efeitos vao aparecer caso contrario não --> 
+            <h1>Ver Curriculo</h1>
+            <h2>Voltar</h2>
+        </div>
+
+        <span id="complementos" class="sections ">
+             <div id="teste1" class="section-top "></div>
+             <div id="teste2" class="section-mid "></div>
+        </span>
+    </aside>
+
+    <main>
+       <header id="header">
+           <div class="headerTitulo"><h1>Desenvolvedor Front-End Jr.</h1></div>
+       </header>
+
+       <section class="sectionAboutMe">
+           <div class="aboutMe">
+                <article class="textAboutMe">
+                    <h1>About me</h1>
+                    <p>My name is Carlos Vinicius <br>
+                        I have 20 years old <br>
+                        I live in Senador Canedo <br>
+                        from Goiás <br> 
+                        My objective is work web developer and read more and more books about programming <br>
+                        My English is hard understand, i am study english every day! <br>
+                    </p>
+                </article>
+                <div><img src="./assets/imgs/photo-about-me.png" alt="Foto de Carlos Vinicius" width="300px"></div>
+            </div>
+
+            <div class="menuAccessibility"><a href="#header" onmouseover="addCaixaDeObs(1)" onmouseout="delCaixaDeObs()">A</a> <a href="#skills" onmouseover="addCaixaDeObs(2)" onmouseout="delCaixaDeObs()">S</a> <a href="#projetos" onmouseover="addCaixaDeObs(3)" onmouseout="delCaixaDeObs()">P</a></div>
+
+       </section>
+
+       <section id="skills" class="sectionMySkills">
+            <div class="tituloseIcones">
+                <img class="icones" src="./assets/imgs/icone-habilidade.png">
+                "<h1>Conhecimentos</h1>
+            </div>
+            
+            <div class="imgSkills">
+                <span><img src="./assets/imgs/icon-node.svg" alt="icone de Node.js" height="40px"></span>
+                <span><img src="./assets/imgs/react.png" alt="icone react" height="70px"></span>
+                <span><img src="./assets/imgs/icon-javascript.svg" alt="icone javascript" height="70px"></span>
+                <span><img src="./assets/imgs/icon-html.svg" alt="icone html" height="70px"></span>
+                <span><img src="./assets/imgs/icon-css.svg" alt="icone css" height="70px"></span>
+                <span><img src="./assets/imgs/icon-figma.svg" alt="icone figma" height="60px"></span>
+                <span><img src="./assets/imgs/icons8-visual-studio-code-2019-48.png" alt="icone visual studio code" height="60px"></span>
+                <span><img src="./assets/imgs/icons8-npm-48.png" alt="icone npm" height="60px"></span>
+            </div>
+       </section>
+
+       <section id="projetos" class="sectionMyProjects">
+           <div class="tituloseIcones">
+                <img src="./assets/imgs/icone-projeto.svg" alt="iconeProjeto">
+                <h1>Meus Projetos</h1>
+           </div>
+            
+           <div class="cardProject">
+                <img id="previewProject" src="./assets/imgs/cardsSkillsImgs/sunnyPage.jpg" alt="Projeto Sunny Page Imagem" height="200px">
+               <article>
+                    <a href="#"><h2>Sunny Page <img src="./assets/imgs/icone-link.png" alt="link para o projeto" height="20px"></h2></a>
+                    <p>This challenge focuses mostly on HTML & CSS. There's a tiny bit of JS included for the mobile navigation toggle. But you could also choose to do this without JS!</p>
+                </article>
+           </div>
+           <div class="cardProject">
+               <img id="previewProject" src="./assets/imgs/cardsSkillsImgs/cards.jpg" alt="Projecto Cards Imagens" height="200px">
+               <article>
+                    <a href="#"><h2>Cards <img src="./assets/imgs/icone-link.png" alt="link para o projeto" height="20px"></h2></a>
+                    <p>This challenge focuses mostly on HTML & CSS. There's a tiny bit of JS included for the mobile navigation toggle. But you could also choose to do this without JS!</p>
+                </article>
+           </div>
+           <div class="cardProject">
+               <img id="previewProject" src="./assets/imgs/cardsSkillsImgs/gridProject.jpg" alt="Projecto Grid Preço Imagem" height="200px">
+               <article>
+                    <a href="#"><h2>Grid Imagens <img src="./assets/imgs/icone-link.png" alt="link para o projeto" height="20px"></h2></a>
+                    <p>This challenge focuses mostly on HTML & CSS. There's a tiny bit of JS included for the mobile navigation toggle. But you could also choose to do this without JS!</p>
+                </article>
+            </div>
+           <div class="cardProject">
+               <img id="previewProject" src="./assets/imgs/cardsSkillsImgs/logoLetMeAsk.svg" alt="LogoLetMeAsk" height="200px">
+               <article>
+                    <a href="#"><h2>Let Me Ask <img src="./assets/imgs/icone-link.png" alt="link para o projeto" height="20px"></h2></a>
+                    <p>This challenge focuses mostly on HTML & CSS. There's a tiny bit of JS included for the mobile navigation toggle. But you could also choose to do this without JS!</p>
+               </article>
+            </div>
+            <div class="cardProject">
+                <img id="previewProject" src="./assets/imgs/cardsSkillsImgs/landingPage.jpg" alt="Landing page imagem" height="200px">
+                <article>
+                     <a href="#"><h2>Landing Page <img src="./assets/imgs/icone-link.png" alt="link para o projeto" height="20px"></h2></a>
+                     <p>This challenge focuses mostly on HTML & CSS. There's a tiny bit of JS included for the mobile navigation toggle. But you could also choose to do this without JS!</p>
+                </article>
+             </div>
+            
+       </section>
+    </main>
+
+
+    <script src="./Script/homeAside.js"></script>
+</body>
+</html>
+
+
+<!-- feito ontem
+interface basica 
+com hover menu 
+circulo para animação de Curriculo
+parte lateral pronta
+cor ajustada -->
+
+<!-- feito 20/07
+Começo de animação para aside trocar de lado e preencher a tela
+ -->
+
+<!--  feito 21/07
+
+1-esboço da animação
+2-script de animação 
+3- adicionei o texto do curriculo
+4-define o espaço 
+
+bug na animação concertado OK
+fica rastros deixando a experiencia ruim e visualmente feio -->
+
+<!-- feito 29/07 
+
+1 - Termino das animações da pagina home e o Curriculo
+2 - Termino do estilo das fontes, alinhamento e adição de imagem.
+3 - Adição da fonte Roboto via Css @import
+ -->
