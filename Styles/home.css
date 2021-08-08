@@ -13,6 +13,7 @@ aside {
     background: #139BF2;
     width: 410px;
     height: 100vh;
+    z-index: 100;
 
     display: flex;
     justify-content: flex-end;
@@ -52,7 +53,7 @@ aside {
     background: rgba(255, 255, 255, 0.16);
     color: white;
     border-radius: 20px;
-    animation: loading 3s normal;
+    animation: loading 2s normal;
 
     padding-left: 80px;
 
@@ -89,7 +90,7 @@ aside {
     margin-left: -100px;
     height: 600px;
     filter: grayscale(0.8);
-    animation: loading 4s normal;
+    animation: loading 3s normal;
 }
 .curriculoOffViewer{ 
     display: none;
@@ -165,6 +166,7 @@ aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
 }
 
 
@@ -189,7 +191,6 @@ aside {
     justify-content: center;
     align-items: center;
     color: transparent;
-    transition: 1s;
     animation: btn-Animation 3.5s normal;
 }
 .btn-curriculo-active:hover{
@@ -268,6 +269,7 @@ main{
     justify-content: center;
     gap: 100px;
 
+
     background-image: url("../assets/imgs/background-about-me.svg");
     background-repeat: no-repeat;
     background-size: 1000px;
@@ -281,7 +283,8 @@ main{
     justify-content: space-between;
     height: 90%;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;    
+    padding-bottom: 40px;
 }
 .textAboutMe h1 {
     text-align: center;
@@ -471,12 +474,13 @@ h2 img{ /* icone do titulo */
     font-size: 18pt;
     font-weight: bold;
     color: white;
+    transition: 0.5s;
+}
+.cardProject article h2:hover{
+    color: #ffffff80;
 }
 .cardProject a{
-  
-}
-.cardProject a:hover{
-    text-decoration: white double;
+    text-decoration: none;
 }
 .cardProject p{
     margin-top: 60px;
