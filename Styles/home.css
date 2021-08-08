@@ -255,49 +255,39 @@ main{
 .sectionAboutMe{
     display: flex;
     height: 100vh;
-    justify-content: center;
     align-items: center;
+
+    background-image: url("../assets/imgs/background-about-me.png");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: center ;
 }
 
 
 .aboutMe{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 60vw;
-    height: 80vh;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-
-
-    background-image: url("../assets/imgs/background-about-me.svg");
-    background-repeat: no-repeat;
-    background-size: 1000px;
-
+    width: 1000px;
+    height: 700px;
 }
 
 .textAboutMe{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
+    text-align: center;
+    width: 30%;
     height: 90%;
     color: white;
     font-family: 'Roboto', sans-serif;    
-    padding-bottom: 40px;
 }
 .textAboutMe h1 {
-    text-align: center;
     font-weight: 700;
     font-size: 24pt;
 }
 .textAboutMe p{
-    text-align: center;
     font-size: 14pt;
     font-weight: bold;
     line-height: 30px;
-    padding-left: 5vw;
-    padding-right: 5vw;
+
 }
 .textAboutMe span{
     filter: invert();
@@ -314,6 +304,9 @@ main{
 }
 
 
+#acessibility {
+    width: 100vw;
+}
 .menuAccessibility {
     display: flex;
     flex-direction: column;
@@ -490,4 +483,94 @@ h2 img{ /* icone do titulo */
     
 }
 
+
+@media screen and (max-width: 1440px) {
+    aside{
+        width: 20vw;
+    }
+    main{
+        width: 80vw;
+    }
+    .menuAccessibility{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    aside{
+        display: none;
+    }
+    main{
+        width: 100vw;
+    }
+
+    .sectionAboutMe{
+        height: 80vh;
+    }
+    .textAboutMe{
+        padding-left: 60px;
+    }
+    .imgSkills{
+        justify-content: center;
+        width: 45vw;
+        gap: 20px;
+    
+    }
+    .sectionMyProjects{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {    
+    header{
+        height: 7vh;
+        background:#07C2DB;
+        
+    }
+    .headerTitulo h1{
+        font-size: 16pt;
+        color: white;
+    }
+    .headerTitulo::after{
+        height: 25px;
+        width: 2px;
+    }
+    .sectionAboutMe{
+        width: 100vw;
+        height: 100vh;
+        background-image: url("../assets/imgs/photo-about-me.svg"), linear-gradient(45deg,#139BF2, #07C2DB);
+        background-size: 50%, 100% 100%;
+        background-position: right 50% top 15%;;
+    }
+    .aboutMe{
+        height: 100%;
+        width: 100%;
+    }
+    .textAboutMe{
+        width: 100vw;
+        height: 90vh;
+        padding: 10px;
+        justify-content: flex-end;
+    }
+    .textAboutMe p{
+        font-size: 8pt;
+        padding: 0 20px;
+    }    
+    .textAboutMe h1{
+        font-size: 10pt;
+    }
+
+    .textAboutMe span{
+        display: flex;
+        justify-content: center;
+    }
+    .textAboutMe span img{
+        width: 35px;
+    }
+
+    /* ----------------- */
+
+    
+}
 
