@@ -488,12 +488,13 @@ footer{
     align-items: center;
     justify-content: center;
     color: white;
-    background-color: #1382DB;
+    background-color: #1381db;
     height: 60px;
     width: 100vw;
     font-size: 1rem;
     font-family: 'Roboto',sans-serif;
     font-weight: lighter;
+    z-index: 100;
 }
 
 
@@ -537,7 +538,7 @@ footer{
 
 @media screen and (max-width: 425px) {    
     main{
-        height: 590vh;
+        height: 600px;
     }
     header{
         height: 10vh;
