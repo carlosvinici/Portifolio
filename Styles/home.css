@@ -244,7 +244,7 @@ main{
     display: flex;
     flex-direction: column;
     float: right;
-    height: 420vh;
+    height: auto;
     width: 70vw;
 
     margin: 0;
@@ -427,7 +427,7 @@ h2 img{ /* icone do titulo */
     gap: 50px;
     align-items: center;
     justify-items: center;
-    height: 110vh;
+    padding-bottom: 60px;
 }
 .tituloseIcones:nth-child(1){
     grid-area: titulo;
@@ -538,7 +538,7 @@ footer{
 
 @media screen and (max-width: 425px) {    
     main{
-        height: 600px;
+        height: auto;
     }
     header{
         height: 10vh;
