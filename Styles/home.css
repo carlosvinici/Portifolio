@@ -604,11 +604,13 @@ footer{
         margin: 30px;
     }
     .sectionMySkills {
+        height: auto;
         gap: 20px;
         justify-content: flex-start;
     }
 
     .imgSkills{
+        height: auto;
         width: 100vw;
         grid-template-columns: 1fr 1fr;
     }
