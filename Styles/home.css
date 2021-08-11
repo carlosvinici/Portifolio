@@ -244,7 +244,7 @@ main{
     display: flex;
     flex-direction: column;
     float: right;
-    height: 400vh;
+    height: auto;
     width: 70vw;
 
     margin: 0;
@@ -255,49 +255,39 @@ main{
 .sectionAboutMe{
     display: flex;
     height: 100vh;
-    justify-content: center;
     align-items: center;
+
+    background-image: url("../assets/imgs/background-about-me.png");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: center ;
 }
 
 
 .aboutMe{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 60vw;
-    height: 80vh;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-
-
-    background-image: url("../assets/imgs/background-about-me.svg");
-    background-repeat: no-repeat;
-    background-size: 1000px;
-
+    width: 1000px;
+    height: 700px;
 }
 
 .textAboutMe{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
+    text-align: center;
+    width: 30%;
     height: 90%;
     color: white;
     font-family: 'Roboto', sans-serif;    
-    padding-bottom: 40px;
 }
 .textAboutMe h1 {
-    text-align: center;
     font-weight: 700;
     font-size: 24pt;
 }
 .textAboutMe p{
-    text-align: center;
     font-size: 14pt;
     font-weight: bold;
     line-height: 30px;
-    padding-left: 5vw;
-    padding-right: 5vw;
+
 }
 .textAboutMe span{
     filter: invert();
@@ -314,6 +304,9 @@ main{
 }
 
 
+#acessibility {
+    width: 100vw;
+}
 .menuAccessibility {
     display: flex;
     flex-direction: column;
@@ -434,7 +427,7 @@ h2 img{ /* icone do titulo */
     gap: 50px;
     align-items: center;
     justify-items: center;
-    height: 110vh;
+    padding-bottom: 60px;
 }
 .tituloseIcones:nth-child(1){
     grid-area: titulo;
@@ -490,4 +483,151 @@ h2 img{ /* icone do titulo */
     
 }
 
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #1381db;
+    height: 60px;
+    width: 100vw;
+    font-size: 1rem;
+    font-family: 'Roboto',sans-serif;
+    font-weight: lighter;
+    z-index: 100;
+}
+
+
+@media screen and (max-width: 1440px) {
+    aside{
+        width: 20vw;
+    }
+    main{
+        width: 80vw;
+    }
+    .menuAccessibility{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    aside{
+        display: none;
+    }
+    main{
+        width: 100vw;
+    }
+
+    .sectionAboutMe{
+        height: 80vh;
+    }
+    .textAboutMe{
+        padding-left: 60px;
+    }
+    .imgSkills{
+        justify-content: center;
+        width: 45vw;
+        gap: 20px;
+    
+    }
+    .sectionMyProjects{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {    
+    main{
+        height: auto;
+    }
+    header{
+        height: 10vh;
+        
+    }
+    .headerTitulo h1{
+        font-size: 16pt;
+    }
+    .headerTitulo::after{
+        height: 25px;
+        width: 2px;
+    }
+    .sectionAboutMe{
+        width: 100vw;
+        height: 90vh;
+        background-image: url("../assets/imgs/background-mobile-about-me.png");
+        background-size: 110%;
+        background-position: right 50% top 5%;
+    }
+    .aboutMe{
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+    }
+    .textAboutMe{
+        width: 50vw;
+        height: 86vh;
+        padding: 10px;
+        justify-content: space-between;
+    }
+    .textAboutMe p{
+        font-size: 8pt;
+        padding: 0 20px;
+    }    
+    .textAboutMe h1{
+        font-size: 14pt;
+    }
+
+    .textAboutMe span{
+        display: flex;
+        justify-content: center;
+    }
+    .textAboutMe span img{
+        width: 35px;
+    }
+
+    .menuAccessibility{
+        display: flex;
+        position: relative;
+        height: 50px;
+        width: 200px;
+        flex-direction: row;
+        margin: 20px;
+    }
+    .sectionAboutMe:nth-child(2){
+        align-items: flex-end;
+    }
+
+    /* ----------------- */
+
+    .tituloseIcones{
+        width: 240px;
+        margin: 30px;
+    }
+    .sectionMySkills {
+        height: auto;
+        gap: 20px;
+        justify-content: flex-start;
+    }
+
+    .imgSkills{
+        height: auto;
+        width: 100vw;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* ----------------- */
+    
+    .cardProject {
+        width: 300px;
+        height: 400px;
+    }
+    .cardProject article p{
+        font-size: 10pt;
+        margin-top: 0px;
+    }
+    .cardProject article h2{
+        font-size: 14pt;
+
+    }
+}
 
