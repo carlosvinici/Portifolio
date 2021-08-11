@@ -332,11 +332,6 @@ main{
     transition: 0.5s;
 }
 
-@keyframes obsTime {
-    0%{opacity: 0;}
-    95%{opacity: 0;}
-    100%{opacity: 100%;}
-}
 .menuAccessibility a:nth-child(1):hover::before {
     position: fixed;
     margin-left: -100px;
@@ -346,7 +341,7 @@ main{
     background: rgba(41, 41, 41, 0.548);
     padding: 20px;
     border-radius: 10px;
-    animation: obsTime 0.8s;
+
 }
 .menuAccessibility a:nth-child(2):hover::before {
     position: fixed;
@@ -357,7 +352,7 @@ main{
     background: rgba(41, 41, 41, 0.548);
     padding: 20px;
     border-radius: 10px;
-    animation: obsTime 0.8s;
+
 
     
 }
@@ -545,7 +540,7 @@ footer{
         
     }
     .headerTitulo h1{
-        font-size: 16pt;
+        font-size: 18pt;
     }
     .headerTitulo::after{
         height: 25px;
@@ -564,14 +559,15 @@ footer{
         justify-content: center;
     }
     .textAboutMe{
-        width: 50vw;
+        width: 55vw;
         height: 86vh;
         padding: 10px;
         justify-content: space-between;
     }
     .textAboutMe p{
-        font-size: 8pt;
+        font-size: 12pt;
         padding: 0 20px;
+        font-weight: 400;
     }    
     .textAboutMe h1{
         font-size: 14pt;
@@ -587,11 +583,10 @@ footer{
 
     .menuAccessibility{
         display: flex;
-        position: relative;
-        height: 50px;
-        width: 200px;
-        flex-direction: row;
+        height: 200px;
+        width: 50px;
         margin: 20px;
+        opacity: 70%;
     }
     .sectionAboutMe:nth-child(2){
         align-items: flex-end;
@@ -611,8 +606,11 @@ footer{
 
     .imgSkills{
         height: auto;
-        width: 100vw;
+        width: 50vw;
         grid-template-columns: 1fr 1fr;
+    }
+    .imgSkills img{
+        height: 35px;
     }
 
     /* ----------------- */
