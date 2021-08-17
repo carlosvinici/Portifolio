@@ -264,18 +264,16 @@ main{
 }
 
 
-.aboutMe{
-    width: 1000px;
-    height: 700px;
-}
+
 
 .textAboutMe{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-    width: 30%;
-    height: 90%;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
     color: white;
     font-family: 'Roboto', sans-serif;    
 }
@@ -284,6 +282,7 @@ main{
     font-size: 24pt;
 }
 .textAboutMe p{
+    width: 15vw;
     font-size: 14pt;
     font-weight: bold;
     line-height: 30px;
@@ -374,12 +373,11 @@ main{
 .sectionMySkills{
     display: flex;
     flex-direction: column;
+    width: 70vw;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100vh;
-
-    gap: 200px;
+    margin-top: 5vh;
 }
 
 .tituloseIcones{
@@ -387,11 +385,13 @@ main{
     background: #139BF2;
     border-radius: 20px;
     width: 400px;
+    margin-bottom: 100px;
     align-items: center;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: white;
+    grid-area: tituloskills;
 }
 
 .tituloseIcones img {
@@ -404,14 +404,38 @@ h2 img{ /* icone do titulo */
     padding: 0px;
 }
 
-.imgSkills {
+.descSkills {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70px 10px;
     align-items: center;
-    width: 45vw;
-    height: 45vh;
-    background-color: white;
+    justify-items: center;
+    column-gap: 5vw;
+
 }
+.descSkills p{
+    color: #5f5f5f60;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-size: 8pt;
+}
+.containerSkills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    margin-top: 10vh;
+}
+.containerSkills h2 {
+    color: #023157c5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+}
+
 
 /* ------------------------------------------- */
 
@@ -519,12 +543,7 @@ footer{
     .textAboutMe{
         padding-left: 60px;
     }
-    .imgSkills{
-        justify-content: center;
-        width: 45vw;
-        gap: 20px;
-    
-    }
+
     .sectionMyProjects{
         display: flex;
         flex-direction: column;
@@ -553,12 +572,9 @@ footer{
         background-size: 110%;
         background-position: right 50% top 5%;
     }
-    .aboutMe{
-        height: 100%;
-        width: 100%;
-        justify-content: center;
-    }
+
     .textAboutMe{
+        margin: 0 40vw;
         width: 55vw;
         height: 86vh;
         padding: 10px;
@@ -568,6 +584,7 @@ footer{
         font-size: 12pt;
         padding: 0 20px;
         font-weight: 400;
+        width: auto;
     }    
     .textAboutMe h1{
         font-size: 14pt;
@@ -599,19 +616,18 @@ footer{
         margin: 30px;
     }
     .sectionMySkills {
-        height: auto;
-        gap: 20px;
-        justify-content: flex-start;
+        width: 100vw;
+        flex-direction: column;
     }
 
-    .imgSkills{
-        height: auto;
-        width: 50vw;
-        grid-template-columns: 1fr 1fr;
+    .containerSkills{
+        width: 100vw;
+        align-items: center; 
     }
-    .imgSkills img{
-        height: 35px;
+    .containerSkills h2 {
+        padding: 0 50px;
     }
+
 
     /* ----------------- */
     
