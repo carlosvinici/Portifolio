@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
-body {
+*{
     margin: 0;
     padding: 0;  
 }
@@ -34,49 +34,53 @@ aside {
     100%{opacity: 100%;}
 }
 
-.container {
+.container {  /* container de estilo curriculo */
+    width: 90vw;
     display: flex;
     flex-flow: row-reverse;
-    margin-left: 80px;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
 }
 
 .estiloCurriculo{
-
     display: grid;
     grid-template-areas: "myNameIs myNameIs"
                 "articleLeft articleRight";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100px 1fr;
 
-    background: rgba(255, 255, 255, 0.16);
     color: white;
     border-radius: 20px;
     animation: loading 2s normal;
-
+    font-family: 'Roboto', sans-serif;
     padding-left: 80px;
 
-    height: 750px;
-    width: 900px;
+    height: 850px;
+    width: 1000px;
+
+    border-radius: 17px;
+    background: #139BF2;
+    box-shadow:  5px 5px 5px #08446a,
+                 -5px -5px 3px #32b0ff;
 }
 .estiloCurriculo h1 {
     grid-area: myNameIs;
     font-size: 24pt;
     text-align: center;
     font-weight: 700;
+    padding: 20px;
 }
-.estiloCurriculo{
-    font-family: 'Roboto', sans-serif;
-}
+
 .estiloCurriculo h2 {
     font-size: 20pt;
     font-weight: 400;
+    padding: 30px 0 10px;
 }
 .estiloCurriculo h3{
     font-size: 12pt;
     font-weight: lighter;
-    line-height: 10px;
+    line-height: 30px;
 }
 #articleLeft {
     grid-area: articleLeft;
@@ -89,8 +93,11 @@ aside {
     z-index: 2;
     margin-left: -100px;
     height: 600px;
-    filter: grayscale(0.8);
+    filter: grayscale(0.5);
     animation: loading 3s normal;
+}
+.links{
+    color: currentColor;
 }
 .curriculoOffViewer{ 
     display: none;
@@ -385,13 +392,13 @@ main{
     background: #139BF2;
     border-radius: 20px;
     width: 400px;
+    height: 5vh;
     margin-bottom: 100px;
     align-items: center;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: white;
-    grid-area: tituloskills;
 }
 
 .tituloseIcones img {
@@ -487,6 +494,7 @@ h2 img{ /* icone do titulo */
     font-weight: bold;
     color: white;
     transition: 0.5s;
+    padding-top: 20px;
 }
 .cardProject article h2:hover{
     color: #ffffff80;
@@ -504,44 +512,76 @@ h2 img{ /* icone do titulo */
 
 footer{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    color: white;
-    background-color: #1381db;
-    height: 60px;
-    width: 100vw;
+    color: #139BF2;
+    height: 20vh;
+    width: 90vw;
     font-size: 1rem;
     font-family: 'Roboto',sans-serif;
     font-weight: lighter;
-    z-index: 100;
+    padding: 3vh;
 }
 
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1450px) {
     aside{
         width: 20vw;
     }
     main{
-        width: 80vw;
+        width: 75vw;
     }
     .menuAccessibility{
         display: none;
     }
+    .textAboutMe {
+        width: 120vw;
+    }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1285px){
+    aside{
+        width: 13vw;
+    }
+    main {
+        width: 80vw;
+    }
+    #complementos {
+        display: none;
+    }
+    .btn-curriculo{
+        margin-right: -50px;
+        background-color: #139BF2;
+    }
+}
+@media screen and (max-width: 1200px){
     aside{
         display: none;
+    }
+    .btn-curriculo{
+        margin-right: 60px;
     }
     main{
         width: 100vw;
     }
-
-    .sectionAboutMe{
-        height: 80vh;
-    }
     .textAboutMe{
-        padding-left: 60px;
+        width: 150vw;
+    }
+}
+@media screen and (max-width: 1100px){
+
+}
+
+@media screen and (max-width: 1024px) {
+    .sectionAboutMe{
+        background-size: 100vw;
+    }
+
+    .textAboutMe{
+        height: 65vh ;
+    }
+    .textAboutMe p {
+        width: 20vw;
     }
 
     .sectionMyProjects{
@@ -550,7 +590,36 @@ footer{
     }
 }
 
-@media screen and (max-width: 425px) {    
+@media screen and (max-width: 860px){
+    .textAboutMe {
+        height: 60vh;
+    }
+    .textAboutMe p {
+        width: 30vw;
+    }
+}
+@media screen and (max-width: 760px){
+    .textAboutMe {
+        height: 55vh;
+    }
+
+}
+
+@media screen and (max-width: 710px){
+    header h1{
+        font-size: 34pt;
+    }
+    .textAboutMe {
+        height: 45vh;
+    }
+    .textAboutMe h1 {
+        font-size: 20pt;
+    }
+    .textAboutMe p {
+        font-size: 10pt;
+    }
+}
+@media screen and (max-width: 700px) {    
     main{
         height: auto;
     }
