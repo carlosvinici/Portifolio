@@ -478,6 +478,8 @@ h2 img{ /* icone do titulo */
 }
 .cardProject #previewProject {
     padding: 10px;
+    display: flex;
+    margin: 0 auto;
 }
 .cardProject article{
     height: 300px;
@@ -516,7 +518,7 @@ footer{
     justify-content: center;
     color: #139BF2;
     height: 20vh;
-    width: 90vw;
+    width: 95vw;
     font-size: 1rem;
     font-family: 'Roboto',sans-serif;
     font-weight: lighter;
