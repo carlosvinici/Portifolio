@@ -1,7 +1,7 @@
 
 const buttonCurriculo = document.getElementById("buttonCurriculo");
 
-function toggleMenu(event){
+function trasicaoParaCurriculo(event){
     if(event.type === 'touchstart') event.preventDefault();
 
     const sectCurriculo = document.getElementById('sectCurriculo');
@@ -19,7 +19,7 @@ function toggleMenu(event){
     teste1.classList.toggle('sectionRight')
 }
 
-buttonCurriculo.addEventListener('click', toggleMenu);
-buttonCurriculo.addEventListener('touchstart', toggleMenu);
+buttonCurriculo.addEventListener('click', trasicaoParaCurriculo);
+buttonCurriculo.addEventListener('touchstart', trasicaoParaCurriculo);
 
 

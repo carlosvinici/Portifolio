@@ -230,7 +230,7 @@ header{
     align-items: center;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 20pt;
+    font-size: 32pt;
     font-weight: bolder;
     color: #139BF2;
 }
@@ -242,7 +242,7 @@ header{
 .headerTitulo::after{
     content: '';
     width: 6px;
-    height: 80px;
+    height: 70px;
     margin: 10px;
     background-color: #139BF2;
     animation: aniBarraTitulo 0.7s  infinite;
@@ -464,12 +464,12 @@ h2 img{ /* icone do titulo */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 370px;
-    height: 560px;
+    width: 420px;
+    height: 570px;
     border: 1px solid #139BF2;
     border-radius: 10px;
 
-    box-shadow: #07C2DB 10px 10px 2px;
+    box-shadow: #07c2db77 10px 10px 20px;
     transition: 1s;
 }
 .cardProject:hover{
@@ -479,7 +479,6 @@ h2 img{ /* icone do titulo */
 .cardProject #previewProject {
     padding: 10px;
     display: flex;
-    margin: 0 auto;
 }
 .cardProject article{
     height: 300px;
@@ -498,18 +497,23 @@ h2 img{ /* icone do titulo */
     transition: 0.5s;
     padding-top: 20px;
 }
-.cardProject article h2:hover{
-    color: #ffffff80;
-}
+
 .cardProject a{
     text-decoration: none;
 }
 .cardProject p{
-    margin-top: 60px;
     font-size: 14pt;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.753);
     
+}
+.cardProject article img{
+    padding: 10px 5px;
+    filter: invert();
+}
+.cardProject article img:hover{
+    opacity: 60%;
+    transition: 1s;
 }
 
 footer{
@@ -518,11 +522,10 @@ footer{
     justify-content: center;
     color: #139BF2;
     height: 20vh;
-    width: 95vw;
     font-size: 1rem;
     font-family: 'Roboto',sans-serif;
     font-weight: lighter;
-    padding: 3vh;
+    padding-bottom: 10px;
 }
 
 
@@ -538,6 +541,9 @@ footer{
     }
     .textAboutMe {
         width: 120vw;
+    }
+    .textAboutMe p {
+        width: 20vw;
     }
 }
 
@@ -569,9 +575,10 @@ footer{
     .textAboutMe{
         width: 150vw;
     }
-}
-@media screen and (max-width: 1100px){
 
+    .sectionMySkills{
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -583,7 +590,7 @@ footer{
         height: 65vh ;
     }
     .textAboutMe p {
-        width: 20vw;
+        width: 30vw;
     }
 
     .sectionMyProjects{
@@ -592,7 +599,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 860px){
+@media screen and (max-width: 940px){
     .textAboutMe {
         height: 60vh;
     }
@@ -600,15 +607,15 @@ footer{
         width: 30vw;
     }
 }
-@media screen and (max-width: 760px){
+@media screen and (max-width: 860px){
     .textAboutMe {
         height: 55vh;
     }
 
 }
 
-@media screen and (max-width: 710px){
-    header h1{
+@media screen and (max-width: 785px){
+    .headerTitulo {
         font-size: 34pt;
     }
     .textAboutMe {
@@ -629,7 +636,7 @@ footer{
         height: 10vh;
         
     }
-    .headerTitulo h1{
+    .headerTitulo {
         font-size: 18pt;
     }
     .headerTitulo::after{
@@ -647,15 +654,17 @@ footer{
     .textAboutMe{
         margin: 0 40vw;
         width: 55vw;
-        height: 86vh;
+        height: 84vh;
         padding: 10px;
         justify-content: space-between;
     }
     .textAboutMe p{
-        font-size: 12pt;
+        font-size: 10pt;
         padding: 0 20px;
         font-weight: 400;
-        width: auto;
+        width: 50vw;
+
+        line-height: 24px;
     }    
     .textAboutMe h1{
         font-size: 14pt;
@@ -704,15 +713,20 @@ footer{
     
     .cardProject {
         width: 300px;
-        height: 400px;
+        height: 500px;
     }
     .cardProject article p{
         font-size: 10pt;
         margin-top: 0px;
+        padding-top: 10px;
     }
     .cardProject article h2{
         font-size: 14pt;
 
+    }
+
+    footer {
+        font-size: 8pt;
     }
 }
 
