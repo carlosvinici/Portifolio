@@ -574,9 +574,7 @@ footer{
     aside{
     width: 0;
     }
-    .btn-curriculo{
-        display: none;
-    }
+
     .textAboutMe span a:nth-child(3){
         display: initial;
     }
@@ -589,6 +587,13 @@ footer{
 
     .sectionMySkills{
         width: auto;
+    }
+/* ----------------curriculo-------------
+ */    .btn-curriculo{
+        transform: scale(0);
+    }
+    .btn-curriculo-active {
+        transform: scale(2);
     }
 }
 
@@ -619,6 +624,9 @@ footer{
     .estiloCurriculo {
         width: 90vw;
     }
+    .btn-curriculo-active{
+        transform: scaleX(3) scaleY(2.3);
+    }
     /* -------------------curriculo end------------------------ */ 
 }
 
@@ -633,6 +641,10 @@ footer{
 
     .estiloCurriculo h2{
         font-size: 1.3rem;
+    }
+    .btn-curriculo-active{
+        transform: scale(2);
+        border: 1px solid white;
     }
     /* -------------------curriculo end------------------------ */
 }
@@ -782,8 +794,17 @@ footer{
     }
     .estiloCurriculo h3{
         font-size: 0.7rem;
-        line-height: 20px;
+        line-height: 15px;
     }
+
+    .btn-curriculo-active{
+        position: absolute;
+        width: 30px;
+        height: 40px;
+        right: 50px;
+        bottom: 100px;
+    }
+
 
 }
 
