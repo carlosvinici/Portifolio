@@ -21,8 +21,9 @@ aside {
     transition: 2s ease-in-out;
 }
 
+/*            Estilo da pagina Curriculo                */
 
-/*  Estilo card curriculo */
+/*  Estilo do background card curriculo */
 @keyframes loading {
     0% {opacity: 0;}
     50% {opacity: 0;}
@@ -31,6 +32,11 @@ aside {
 @keyframes btn-Animation {
     0%{opacity: 0; width: 0;}
     50%{opacity: 0; width: 0;}
+    100%{opacity: 100%;}
+}
+@keyframes btn-Animation-Returning {
+    0%{opacity: 0;}
+    75%{opacity: 0;}
     100%{opacity: 100%;}
 }
 
@@ -60,9 +66,7 @@ aside {
     width: 1000px;
 
     border-radius: 17px;
-    background: #139BF2;
-    box-shadow:  5px 5px 5px #08446a,
-                 -5px -5px 3px #32b0ff;
+    background: #ffffff23;
 }
 .estiloCurriculo h1 {
     grid-area: myNameIs;
@@ -109,7 +113,7 @@ aside {
 .btn-curriculo {
     display: flex;
     position: absolute;
-    background-color: transparent;
+    background-color: #139BF2;
     width: 170px;
     height: 170px;
     border-radius: 100%;
@@ -121,7 +125,8 @@ aside {
     justify-content: center;
     align-items: center;
     color: transparent;
-    transition: 1s ease;
+
+    transition: 3s ease-in-out;
 }
 .btn-curriculo h2{
     display: none;
@@ -140,7 +145,7 @@ aside {
     background: transparent;
     height: 100vh;
     margin-right: -65px;
-    transition: 4s;
+
 }
 .section-top {
     background: rgb(255, 255, 255);
@@ -148,7 +153,7 @@ aside {
     width: 100px;
     margin-right: 5px;
     border-bottom-left-radius: 100px;
-    transition: 2s;
+    animation: btn-Animation-Returning 2s;
 }
 .section-mid{
     background: rgb(255, 255, 255);
@@ -156,7 +161,7 @@ aside {
     width: 100px;
     margin-right: 5px;
     border-top-left-radius: 100px;
-    transform: 2s;
+    animation: btn-Animation-Returning 2s;
 }
 
 
@@ -165,7 +170,7 @@ aside {
 /* --------------- Aside Curriculo -----------------------------*/
 /*---------------- Trasição para tela curriculo ----------------*/
  .asideCurriculo {
-    background: #139BF2;
+    background: linear-gradient(238.2deg, #1179F2 0.43%, #00B2FF 100.34%);
     width: 100vw;
     height: 100vh;
 
@@ -332,9 +337,12 @@ main{
     padding: 20px 10px;
     text-decoration: none;
 }
-.menuAccessibility a:hover {
+.menuAccessibility img{
+    filter: invert();
+}
+.menuAccessibility img:hover {
     color: #ffffff;
-    background-color: #1382DB;
+    opacity: 60%;
     transition: 0.5s;
 }
 
@@ -536,9 +544,6 @@ footer{
     main{
         width: 75vw;
     }
-    .menuAccessibility{
-        display: none;
-    }
     .textAboutMe {
         width: 120vw;
     }
@@ -564,10 +569,8 @@ footer{
 }
 @media screen and (max-width: 1200px){
     aside{
-        display: none;
-    }
-    .btn-curriculo{
-        margin-right: 60px;
+    display: none;
+
     }
     main{
         width: 100vw;
