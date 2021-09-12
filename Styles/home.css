@@ -771,16 +771,17 @@ footer{
         grid-template-rows: 30px;
         height: 100vh;
         width: 100vw;
+        padding-left: 10px;
     }
     .estiloCurriculo h1 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .estiloCurriculo h2 {
-        font-size: 1rem;    
+        font-size: 1.2rem;    
     }
     .estiloCurriculo h3{
-        font-size: 0.7rem;
-        line-height: 15px;
+        font-size: 0.9rem;
+        line-height: 20px;
     }
 
 }
