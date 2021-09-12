@@ -1,5 +1,7 @@
-
 const buttonCurriculo = document.getElementById("buttonCurriculo");
+
+
+const buttonCurriculoMobile = document.getElementById("buttonCurriculoMobile");
 
 function trasicaoParaCurriculo(event){
     if(event.type === 'touchstart') event.preventDefault();
@@ -21,5 +23,9 @@ function trasicaoParaCurriculo(event){
 
 buttonCurriculo.addEventListener('click', trasicaoParaCurriculo);
 buttonCurriculo.addEventListener('touchstart', trasicaoParaCurriculo);
+
+buttonCurriculoMobile.addEventListener('click', trasicaoParaCurriculo);
+buttonCurriculoMobile.addEventListener('touchstart', trasicaoParaCurriculo);
+
 
 

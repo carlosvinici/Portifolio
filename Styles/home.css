@@ -24,7 +24,7 @@ aside {
 /*            Estilo da pagina Curriculo                */
 
 /*  Estilo do background card curriculo */
-@keyframes loading {
+/* @keyframes loading {
     0% {opacity: 0;}
     50% {opacity: 0;}
     100%{opacity: 100%;}
@@ -35,10 +35,10 @@ aside {
     100%{opacity: 100%;}
 }
 @keyframes btn-Animation-Returning {
-    0%{opacity: 0;}
-    75%{opacity: 0;}
+    0%{opacity: 0;width: 0;}
+    75%{opacity: 0;width: 0;}
     100%{opacity: 100%;}
-}
+} */
 
 .container {  /* container de estilo curriculo */
     width: 90vw;
@@ -62,27 +62,27 @@ aside {
     font-family: 'Roboto', sans-serif;
     padding-left: 80px;
 
-    height: 850px;
-    width: 1000px;
+    height: 90vh;
+    width: 70vw;
 
     border-radius: 17px;
     background: #ffffff23;
 }
 .estiloCurriculo h1 {
     grid-area: myNameIs;
-    font-size: 24pt;
+    font-size: 2rem;
     text-align: center;
     font-weight: 700;
     padding: 20px;
 }
 
 .estiloCurriculo h2 {
-    font-size: 20pt;
+    font-size: 1.6rem;
     font-weight: 400;
     padding: 30px 0 10px;
 }
 .estiloCurriculo h3{
-    font-size: 12pt;
+    font-size: 1rem;
     font-weight: lighter;
     line-height: 30px;
 }
@@ -302,6 +302,9 @@ main{
 }
 .textAboutMe span{
     filter: invert();
+}
+.textAboutMe span a:nth-child(3){
+    display: none;
 }
 .textAboutMe span img{
     padding: 10px;
@@ -569,8 +572,13 @@ footer{
 }
 @media screen and (max-width: 1200px){
     aside{
-    display: none;
-
+    width: 0;
+    }
+    .btn-curriculo{
+        display: none;
+    }
+    .textAboutMe span a:nth-child(3){
+        display: initial;
     }
     main{
         width: 100vw;
@@ -600,6 +608,18 @@ footer{
         display: flex;
         flex-direction: column;
     }
+
+    /* -------------------curriculo------------------------ */
+    .container img{
+        display: none;
+    }  
+    .container {
+        width: 100vw;
+    }
+    .estiloCurriculo {
+        width: 90vw;
+    }
+    /* -------------------curriculo end------------------------ */ 
 }
 
 @media screen and (max-width: 940px){
@@ -609,11 +629,24 @@ footer{
     .textAboutMe p {
         width: 30vw;
     }
+    /* -------------------curriculo------------------------ */
+
+    .estiloCurriculo h2{
+        font-size: 1.3rem;
+    }
+    /* -------------------curriculo end------------------------ */
 }
 @media screen and (max-width: 860px){
     .textAboutMe {
         height: 55vh;
     }
+
+    /* -------------------curriculo------------------------ */
+    .estiloCurriculo h3 {
+        font-size: 0.8rem;
+    }
+    /* -------------------curriculo end------------------------ */
+
 
 }
 
@@ -731,5 +764,24 @@ footer{
     footer {
         font-size: 8pt;
     }
+}
+@media screen and (max-width: 584px){
+
+    .estiloCurriculo {
+        grid-template-rows: 30px;
+        height: 100vh;
+        width: 100vw;
+    }
+    .estiloCurriculo h1 {
+        font-size: 1.2rem;
+    }
+    .estiloCurriculo h2 {
+        font-size: 1rem;    
+    }
+    .estiloCurriculo h3{
+        font-size: 0.7rem;
+        line-height: 15px;
+    }
+
 }
 
