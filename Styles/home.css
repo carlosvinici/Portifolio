@@ -23,8 +23,8 @@ aside {
 
 /*            Estilo da pagina Curriculo                */
 
-/*  Estilo do background card curriculo */
-/* @keyframes loading {
+ /*  Estilo do background card curriculo */
+ @keyframes loading {
     0% {opacity: 0;}
     50% {opacity: 0;}
     100%{opacity: 100%;}
@@ -38,7 +38,7 @@ aside {
     0%{opacity: 0;width: 0;}
     75%{opacity: 0;width: 0;}
     100%{opacity: 100%;}
-} */
+} 
 
 .container {  /* container de estilo curriculo */
     width: 90vw;
@@ -58,7 +58,7 @@ aside {
 
     color: white;
     border-radius: 20px;
-    animation: loading 2s normal;
+    animation: loading 2.5s normal;
     font-family: 'Roboto', sans-serif;
     padding-left: 80px;
 
