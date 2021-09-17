@@ -97,8 +97,18 @@ aside {
     z-index: 2;
     margin-left: -100px;
     height: 600px;
-    filter: grayscale(0.5);
     animation: loading 3s normal;
+}
+.estiloCurriculo a img {
+    filter: invert(1);
+    margin: 0;
+    width: 30px;
+    height: 30px;
+}
+.estiloCurriculo a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
 .links{
     color: currentColor;
@@ -153,7 +163,7 @@ aside {
     width: 100px;
     margin-right: 5px;
     border-bottom-left-radius: 100px;
-    animation: btn-Animation-Returning 2s;
+    animation: btn-Animation-Returning 1s;
 }
 .section-mid{
     background: rgb(255, 255, 255);
@@ -161,7 +171,7 @@ aside {
     width: 100px;
     margin-right: 5px;
     border-top-left-radius: 100px;
-    animation: btn-Animation-Returning 2s;
+    animation: btn-Animation-Returning 1s;
 }
 
 
