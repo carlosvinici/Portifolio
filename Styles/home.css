@@ -181,7 +181,6 @@ aside {
 /* --------------- Aside Curriculo -----------------------------*/
 /*---------------- Trasição para tela curriculo ----------------*/
  .asideCurriculo {
-    background: linear-gradient(238.2deg, #1179F2 0.43%, #00B2FF 100.34%);
     width: 100vw;
     height: 100vh;
     display: flex;
