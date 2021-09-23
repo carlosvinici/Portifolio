@@ -19,6 +19,7 @@ aside {
     justify-content: flex-end;
     align-items: center;
     transition: 2s ease-in-out;
+
 }
 
 /*            Estilo da pagina Curriculo                */
@@ -136,7 +137,7 @@ aside {
     align-items: center;
     color: transparent;
 
-    transition: 3s ease-in-out;
+    /* transition: 3s ease-in-out; */
 }
 .btn-curriculo h2{
     display: none;
@@ -183,8 +184,6 @@ aside {
     background: linear-gradient(238.2deg, #1179F2 0.43%, #00B2FF 100.34%);
     width: 100vw;
     height: 100vh;
-
-
     display: flex;
     justify-content: space-between;
     align-items: center;

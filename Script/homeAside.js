@@ -17,6 +17,8 @@ function trasicaoParaCurriculo(event){
     sectionsRight.classList.toggle('sectionsRight');
     buttonCurriculo.classList.toggle('btn-curriculo-active');
     asideLeft.classList.toggle('asideCurriculo')
+
+   /*  essas são as barras que formam o desing da aside left quando fechada, seram removidas em breve */
     teste2.classList.toggle('sectionRight')
     teste1.classList.toggle('sectionRight')
 }
