@@ -146,31 +146,6 @@ aside {
 }
 
 
-.sections {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: transparent;
-    height: 100vh;
-    margin-right: -65px;
-
-}
-.section-top {
-    background: rgb(255, 255, 255);
-    height: 42.9vh;
-    width: 100px;
-    margin-right: 5px;
-    border-bottom-left-radius: 100px;
-    animation: btn-Animation-Returning 1s;
-}
-.section-mid{
-    background: rgb(255, 255, 255);
-    height: 42.9vh;
-    width: 100px;
-    margin-right: 5px;
-    border-top-left-radius: 100px;
-    animation: btn-Animation-Returning 1s;
-}
 
 
 
@@ -185,45 +160,7 @@ aside {
     align-items: center;
     z-index: 100;
 }
-
-
-
-
-.btn-curriculo-active {
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    width: 170px;
-    height: 170px;
-    border: solid 10px white; 
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    border-right-color:transparent ; 
-
-    position: relative;
-    float: right;
-
-    box-shadow: none;
-    justify-content: center;
-    align-items: center;
-    color: transparent;
-    animation: btn-Animation 3.5s normal;
-}
-.btn-curriculo-active:hover{
-    color: #139BF2;
-    background: white;
-}
-.btn-curriculo-active h1{
-    display: none;
-}
-.btn-curriculo-active h2 {
-    display: block;
-}
-
-.sectionsRight {
-    display: none;
-}
+ 
 
 /*  ----------end asideCur---------- */
 
@@ -233,7 +170,7 @@ aside {
 header{
     padding: 0;
     margin: 0;
-    height: 10vh;
+    height: 5vh;
 }
 .headerTitulo {
     display: flex;
@@ -260,23 +197,23 @@ header{
 main{
     display: flex;
     flex-direction: column;
-    float: right;
-    height: auto;
-    width: 70vw;
 
-    margin: 0;
+    height: auto;
+    margin: 0 auto;
     padding: 0;
 }
 
 /* -------------About Section------------------------------------------- */
 .sectionAboutMe{
     display: flex;
-    height: 100vh;
+    height: 800px;
+    width: 100vw;
     align-items: center;
+    width: 100%;
 
     background-image: url("../assets/imgs/background-about-me.png");
     background-repeat: no-repeat;
-    background-size: 1000px;
+    background-size: 800px;
     background-position: center ;
 }
 
@@ -317,6 +254,7 @@ main{
 }
 .sectionAboutMe:nth-child(2){ /* posição do menu accessibility */
     justify-content: flex-end;
+
 }
 
 
