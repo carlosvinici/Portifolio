@@ -11,13 +11,10 @@
 aside {
     position: fixed;
     background: #139BF2;
-    width: 410px;
+    width: 0px;
     height: 100vh;
     z-index: 100;
 
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     transition: 2s ease-in-out;
 
 }
@@ -311,9 +308,6 @@ main{
 .textAboutMe span{
     filter: invert();
 }
-.textAboutMe span a:nth-child(3){
-    display: none;
-}
 .textAboutMe span img{
     padding: 10px;
 }
@@ -549,9 +543,6 @@ footer{
 
 
 @media screen and (max-width: 1450px) {
-    aside{
-        width: 20vw;
-    }
     main{
         width: 75vw;
     }
@@ -564,9 +555,6 @@ footer{
 }
 
 @media screen and (max-width: 1285px){
-    aside{
-        width: 13vw;
-    }
     main {
         width: 80vw;
     }
@@ -579,13 +567,6 @@ footer{
     }
 }
 @media screen and (max-width: 1200px){
-    aside{
-    width: 0;
-    }
-
-    .textAboutMe span a:nth-child(3){
-        display: initial;
-    }
     main{
         width: 100vw;
     }
