@@ -197,7 +197,6 @@ header{
 main{
     display: flex;
     flex-direction: column;
-
     height: auto;
     margin: 0 auto;
     padding: 0;
@@ -206,14 +205,12 @@ main{
 /* -------------About Section------------------------------------------- */
 .sectionAboutMe{
     display: flex;
-    height: 800px;
-    width: 100vw;
+    height: 65rem;
     align-items: center;
-    width: 100%;
 
     background-image: url("../assets/imgs/background-about-me.png");
     background-repeat: no-repeat;
-    background-size: 800px;
+    background-size: 65rem;
     background-position: center ;
 }
 
@@ -226,7 +223,8 @@ main{
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    width: 100vw;
+
+    width: 130vw;
     height: 70vh;
     color: white;
     font-family: 'Roboto', sans-serif;    
@@ -331,11 +329,11 @@ main{
 .sectionMySkills{
     display: flex;
     flex-direction: column;
-    width: 70vw;
+    width: 100vw;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 25px;
 }
 
 .tituloseIcones{
