@@ -10,8 +10,8 @@ function trasicaoParaCurriculo(event){
     const sectionsRight = document.getElementById('complementos');
     const buttonCurriculo = document.getElementById('buttonCurriculo');
     const asideLeft = document.getElementById('asideLeft');
-    const teste1 = document.getElementById('teste1');
-    const teste2 = document.getElementById('teste2');
+    const sectionTop = document.getElementById('sectionTop');
+    const sectionMid = document.getElementById('sectionMid');
 
     sectCurriculo.classList.toggle('curriculoOffViewer');
     sectionsRight.classList.toggle('sectionsRight');
@@ -19,8 +19,8 @@ function trasicaoParaCurriculo(event){
     asideLeft.classList.toggle('asideCurriculo')
 
    /*  essas são as barras que formam o desing da aside left quando fechada, seram removidas em breve */
-    teste2.classList.toggle('sectionRight')
-    teste1.classList.toggle('sectionRight')
+    sectionMid.classList.toggle('sectionRight')
+    sectionTop.classList.toggle('sectionRight')
 }
 
 buttonCurriculo.addEventListener('click', trasicaoParaCurriculo);
